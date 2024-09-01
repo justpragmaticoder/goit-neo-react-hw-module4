@@ -1,0 +1,19 @@
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    gap: var(--gallery-gap);
+}
+
+
+.galleryItem {
+    width: calc(100% / var(--gallery-column-count) - (var(--gallery-gap) * (var(--gallery-column-count) - 1)));
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.galleryItem:hover {
+    transform: scale(1.02);
+}
