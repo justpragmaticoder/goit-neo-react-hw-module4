@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const BASE_URL = "https://api.unsplash.com/";
-const API_KEY = import.meta.env.UNSPLASH_API_KEY;
+const API_KEY = process.env.UNSPLASH_API_KEY;
 const PHOTO_ORIENTATION = "landscape";
 
 axios.defaults.baseURL = BASE_URL;
